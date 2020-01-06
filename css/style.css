@@ -1,0 +1,642 @@
+html, body{
+  width: 100%;
+  height : 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(250, 248, 245);
+}
+
+/* ------------------------------------Accueil Poëmashup ------------------------------------ */
+#accueil {
+  width: 100%;
+  height : 100%;
+  background-image: url(../img/fond_accueil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;   
+}
+
+#conteneur_accueil {
+  width: 100%;
+  height : 100%;
+  display: flex;
+  justify-content : center;
+  flex-direction: row;
+}
+
+.structure_colonne {
+  width:50%;
+  height:100%;
+  padding-left: 90px;
+  padding-right: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.structure_colonne>.contenu{
+  text-align: center;
+}
+
+.structure_colonne h2 {
+  font-size: 27px;
+  color: #000;
+  text-align: center;
+}
+
+.logo_accueil {
+  width: 200px;
+  margin-bottom: 10px;  
+}
+
+/*BOUTON GENERATEUR */
+.bouton1_accueil {
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: #f88b50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10.5px;
+  width: 200px;
+  height: 54px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  }
+  
+.bouton1_accueil span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  
+.bouton1_accueil span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  
+.bouton1_accueil:hover span {
+  padding-right: 25px;
+  }
+  
+.bouton1_accueil:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+/*BOUTON DECOUVERTE */
+.bouton2_accueil {
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: #4bd2e2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10.5px;
+  width: 200px;
+  height: 54px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  }
+  
+.bouton2_accueil span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  
+.bouton2_accueil span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  
+.bouton2_accueil:hover span {
+  padding-right: 25px;
+  }
+  
+.bouton2_accueil:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+
+/* ------------------------------------ Page Générateur ------------------------------------ */
+#generateur{
+  margin-top: -30px;
+}
+
+#conteneur_form{
+  margin: auto;
+  width: 700px;
+  background: linear-gradient(#fbb040, #ef4136);
+  border-radius: 20px;
+  box-shadow: 0px 5px 14px -4px rgba(0,0,0,0.75);
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.structure_form{
+  width: 450px;
+  margin: auto;
+  color: #fff;
+}
+
+#conteneur_form h2{
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#conteneur_form #chanson{
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#conteneur_form #form{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#conteneur_form button{
+  border-radius: 50%;
+  width: 50px;
+  border: none;
+  font-size: 40px;
+  box-shadow: 0px 5px 14px -4px rgba(0,0,0,0.75);
+  color: #f4753a;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contenu_form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#boutons{
+  position: absolute;
+  right: -80px;
+  bottom: -25px;
+}
+
+/* Poemashup */
+#conteneur_poemashup{
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  width: 1080px;
+}
+
+.structure_poemashup .contenu{
+  display: block;
+}
+
+.structure_poemashup{
+  margin : 30px 0 30px 0;
+}
+
+.structure_poemashup h2{
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: left;
+  color: #f4753a;
+  margin : 10px 0 10px 0;
+  border-bottom: 2px #f4753a solid;
+}
+
+.structure_poemashup p{
+  font-size: 18px;
+  color:#000;
+}
+
+#reponse p{
+  text-align: center;
+  line-height: 35px;
+}
+
+#alert{
+  display: block;
+}
+
+.alert .inner {
+  padding: 6px;
+  margin: 6px;
+  border-radius: 3px;
+  border: 1px solid rgb(180,180,180);
+  background-color: rgb(212,212,212);
+  font-size: 18px;
+}
+  
+.alert .close {
+  float: right;
+  margin: 3px 12px 0px 0px;
+  cursor: pointer;
+}
+  
+.alert .inner,.alert .close {
+  color: rgb(88,88,88);
+}
+  
+.alert.success .inner {
+  border: 1px solid rgb(233, 214, 198);
+  background-color: rgb(240, 225, 216);
+}
+  
+.alert.success .inner,.alert.success .close {
+  color:#ec4f1f;
+}
+
+/* ------------------------------------ Page Découverte ------------------------------------ */
+#conteneur_Chansons,#conteneur_Artistes{
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  width: 1080px;
+}
+
+.structure_Chansons .contenu, .structure_Artistes .contenu{
+  display: block;
+}
+
+.structure_Chansons{
+  margin : 30px 0 0px 0;
+}
+
+.structure_Chansons h2, .structure_Artistes h2{
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: left;
+  color: #77a1d3;
+  margin : 10px 0 10px 0;
+  border-bottom: 2px #77a1d3 solid;
+}
+
+.structure_Chansons p, .structure_Artistes p{
+  font-size: 18px;
+  color:#000;
+}
+
+.conteneur_card{
+  margin: auto;
+  width: 1080px;
+  
+}
+
+.card{
+  display: inline-block;
+  margin: 10px 5px 10px 5px;
+  width: 31%;
+  background-image: linear-gradient(to left, #77A1D3 0%, #79CBCA 99.99%, #77A1D3 100%);
+  transition: 0.4s;
+  border-radius: 20px;
+  box-shadow: 0px 5px 14px -4px rgba(0,0,0,0.75);
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.card:hover{
+  width: 34%;
+}
+
+.structure_card{
+  width: 95%;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.card h2{
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card #chanson{
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.contenu_card.place{
+  width: 20%;
+}
+
+.contenu_card.infos{
+  width: 80%;
+}
+
+.contenu_card.place h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+.contenu_card.infos h2{
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contenu_card.infos h3{
+  font-size: 16px;
+  margin: 0px 0 5px 0;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.contenu_card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert.decouverte .inner {
+  border: 1px solid rgb(198, 210, 233);
+  background-color: rgb(216, 226, 240);
+}
+
+.alert.decouverte .inner,.alert.decouverte .close {
+  color:#77a1d3;
+}
+
+.contenu_moment{
+  display: inline-block;
+  width: 32%;
+  margin: 10px 5px 10px 5px; 
+}
+
+.contenu_moment img{
+  width: 100%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.contenu_moment:hover{
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  position: relative;
+  background-color: none;
+  margin: 90px auto; 
+  width: 500px; 
+}
+
+.modal-content img {
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ------------------------------------ Footer ------------------------------------ */
+
+#partie_footer1{
+  /* background-color: rgb(250, 248, 245); */
+  background: linear-gradient(#faf8f5, #fff);;
+}
+
+#conteneur_footer1{
+  width: 1080px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#structure_footer1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenu_footer{
+  text-align: right;
+  color: grey;
+}
+
+#partie_footer2{
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+#conteneur_footer2{
+  width: 1080px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#structure_footer2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenu_footer a{
+  text-decoration : none;
+  color: grey;
+}
+
+.contenu_footer ul{
+  list-style-type: none;
+}
+
+.contenu_footer p, a{
+  margin-top: 10px;
+}
+    
+@keyframes slidein {
+  from {
+    transform: translateX(-50px);
+    opacity: 0%;
+  }
+  
+  to {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+/* ------------------------------------Responsive ------------------------------------ */
+/*---------------------- Version Tablette ------------------------*/
+@media only screen and (max-width: 1280px){
+  #conteneur_poemashup, #conteneur_Chansons, .conteneur_card, #conteneur_Artistes{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .structure_poemashup h2, .structure_Chansons h2, .structure_Artistes h2{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin : 10px;
+  }
+
+  .structure_poemashup p, .structure_Chansons p, .structure_Artistes h2{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contenu_moment{
+    width: 31%; 
+  }
+
+  #conteneur_footer1, #conteneur_footer2{
+    width: 100%;
+  }
+
+  .contenu_footer{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*---------------------- Version Mobile ------------------------*/
+
+@media only screen and (max-width: 800px){
+  #accueil{
+    background-image: none;
+  }
+
+  #conteneur_accueil {
+    display: inline-block;
+  }
+  
+  .structure_colonne{
+    width: 80%;
+    display: block;
+    padding: 0;
+    margin: 40px auto;
+    height: auto;
+  }
+
+  #conteneur_form{
+    width: 90%;
+  }
+
+  .structure_form{
+    width: 90%;
+  }
+
+  #boutons{
+    position: absolute;
+    right: -20px;
+    bottom: -25px;
+  }
+
+  .card{
+    width: 46%;
+    margin-left: 7px;
+  }
+
+  .card:hover{
+    width: 46%;
+  }
+
+  .contenu_card.place h2{
+    font-size: 20px;
+  }
+
+  .modal-content {
+    width: 80%; 
+  }
+
+  #conteneur_footer2{
+    height: 100%;
+  }
+
+  #structure_footer2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenu_footer{
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .contenu_footer p{
+    margin: 4px 0 4px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .contenu_footer ul{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .contenu_footer img{
+    padding-left: 10px;
+    padding-right: 10px;
+    width : 80%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contenu_moment{
+    width: 80%;
+    display: block;
+    margin: 10px auto; 
+  }
+}
+
+
+
+
+

@@ -1,0 +1,133 @@
+html, body{
+  width: 100%;
+  height : 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------------Accueil Poëmashup ------------------------------------ */
+#accueil {
+  width: 100%;
+  height : 100%;
+  background-image: url(../img/fond_accueil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;   
+}
+
+#conteneur_accueil {
+  width: 100%;
+  height : 100%;
+  display: flex;
+  justify-content : center;
+  flex-direction: row;
+}
+
+.structure_colonne {
+  width:50%;
+  height:100%;
+  padding-left: 90px;
+  padding-right: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.structure_colonne>.contenu{
+  text-align: center;
+}
+
+.structure_colonne h2 {
+  font-size: 27px;
+  color: #000;
+  text-align: center;
+}
+
+.logo_accueil {
+  width: 200px;
+  margin-bottom: 10px;  
+}
+
+/*BOUTON GENERATEUR */
+.bouton1_accueil {
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: #f88b50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10.5px;
+  width: 200px;
+  height: 54px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  }
+  
+.bouton1_accueil span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  
+.bouton1_accueil span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  
+.bouton1_accueil:hover span {
+  padding-right: 25px;
+  }
+  
+.bouton1_accueil:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+/*BOUTON DECOUVERTE */
+.bouton2_accueil {
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: #4bd2e2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10.5px;
+  width: 200px;
+  height: 54px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  }
+  
+.bouton2_accueil span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  
+.bouton2_accueil span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  
+.bouton2_accueil:hover span {
+  padding-right: 25px;
+  }
+  
+.bouton2_accueil:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
