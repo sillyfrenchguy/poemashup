@@ -94,7 +94,7 @@
     <div id="modalAngele" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="img/fiche_the_weeknd.png" alt="En savoir plus sur The Weeknd">
+            <img src="img/fiche_the_weeknd.png" alt="En savoir plus sur Sterenn">
         </div>
     </div>
 
