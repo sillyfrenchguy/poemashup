@@ -82,22 +82,43 @@ function afficheMashup(){
 }
 
 
-var modalA = document.getElementById("modalAngele");
+var modalS = document.getElementById("modalSterenn");
 
-var btnA = document.getElementById("btnAngele");
+var btnS = document.getElementById("btnSterenn");
 
 var span = document.getElementsByClassName("close")[0];
 
-btnA.onclick = function() {
-  modalA.style.display = "block";
+btnS.onclick = function() {
+  modalS.style.display = "block";
 }
 
 span.onclick = function() {
-  modalA.style.display = "none";
+  modalS.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modalA) {
-    modalA.style.display = "none";
+  if (event.target == modalS) {
+    modalS.style.display = "none";
   }
 }
+
+var modalT = document.getElementById("modalTheo");
+
+var btnT = document.getElementById("btnTheo");
+
+var span1 = document.getElementsByClassName("close")[1];
+
+btnT.onclick = function() {
+  modalT.style.display = "block";
+}
+
+span1.onclick = function() {
+  modalT.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalT) {
+    modalT.style.display = "none";
+  }
+}
+

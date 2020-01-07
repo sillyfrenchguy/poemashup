@@ -250,13 +250,13 @@ html, body{
   font-size: 18px;
 }
   
-.alert .close {
+.alert .close2 {
   float: right;
   margin: 3px 12px 0px 0px;
   cursor: pointer;
 }
   
-.alert .inner,.alert .close {
+.alert .inner,.alert .close2 {
   color: rgb(88,88,88);
 }
   
@@ -265,7 +265,7 @@ html, body{
   background-color: rgb(240, 225, 216);
 }
   
-.alert.success .inner,.alert.success .close {
+.alert.success .inner,.alert.success .close2 {
   color:#ec4f1f;
 }
 

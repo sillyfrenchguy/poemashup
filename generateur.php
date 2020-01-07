@@ -48,7 +48,7 @@
     <div id="poemashup">
         <div id="conteneur_poemashup">
         <div class="alert success" id="info">
-		        <label class="close" id="close" title="Fermer la notice !" for="alert2">✖</label>
+		        <label class="close2" id="close" title="Fermer la notice !" for="alert2">✖</label>
                 <p class="inner"><strong>Créez votre Poëmashup en quelques secondes !</strong> <br>
                 - Ajoutez une chanson, choisissez le nombre de vers et cliquez sur "+". <br>
                 - Une fois votre sélection faite, cliquez sur "∞".
@@ -81,20 +81,20 @@
             </div>
             <div class="structure_poemashup">
                 <div class="contenu_moment">
-                    <img src="img/sterenn.png" alt="" id="btnAngele">
+                    <img src="img/sterenn.png" alt="" id="btnSterenn">
                 </div>
                 <div class="contenu_moment">
-                    <img src="img/theo.png" alt="" id="btnWeeknd">
+                    <img src="img/theo.png" alt="" id="btnTheo">
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal Sterenn -->
-    <div id="modalAngele" class="modal">
+    <div id="modalSterenn" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="img/fiche_the_weeknd.png" alt="En savoir plus sur Sterenn">
+            <img src="img/poemashup_sterenn.png" alt="Voir le Poëmashup de Sterenn">
         </div>
     </div>
 
@@ -102,7 +102,7 @@
     <div id="modalTheo" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="img/fiche_the_weeknd.png" alt="En savoir plus sur The Weeknd">
+            <img src="img/poemashup_theo.png" alt="Voir le Poëmashup de Théo">
         </div>
     </div>
 
