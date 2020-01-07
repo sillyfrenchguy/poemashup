@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/Poemashup/css/style.css">
     <link rel="stylesheet" type="text/css" href="/Poemashup/css/select.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Poemashupimg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Poemashupimg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Poemashupimg/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.css">
