@@ -25,7 +25,7 @@
         <div id="conteneur_form">
             <div class="structure_form">
                 <div class="contenu_form">
-                    <h2>Générez vos paroles</h2>
+                    <h2>Générez votre poëme</h2>
                     <section id="form">
                     <input type="text" name="chanson" id="chanson" value="" placeholder="Titre de la chanson, Nom de l’artiste"/><br>
                         <label for="selecteur_vers">Nombre de vers :</label>
